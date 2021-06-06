@@ -21,7 +21,7 @@ In general so far, if you want lower bitrate or lower resolution video, do a fin
 
 I will have separate scripts for HVC 2160 16800, HVC 1440p 8100, and HVC 1080p 5800, but if you want any of the other resolution/bitrate combinations, do the find/replace above.
 
-I recommend testing using the below five lines to get the Monday Wrap-up video because it's short before using all or any of the remaining scripts to verify that your ffmpeg install works correctly.
+I recommend testing using the below five lines to get the WWDC 20 Monday Wrap-up video because it's short before using all or any of the remaining scripts to verify that your ffmpeg install works correctly.
 
 ```bash
 ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2020/10691/2/A92788CB-81ED-4CCF-B6B1-4DD7A1F3E87D/hvc_2160p_16800/prog_index.m3u8 -c copy "Session - 10691 temp.mp4"
