@@ -29,3 +29,10 @@ ffmpeg -i https://p-events-delivery.akamaized.net/1805asrvgvurxcrkewleraugwqathm
 ffmpeg -i "WWDC 2021 Keynote temp.mp4" -i "WWDC 2021 Keynote temp.aac" -c copy "Apple WWDC 2021 Keynote Address (1440p).mp4"
 rm "WWDC 2021 Keynote temp.mp4"
 rm "WWDC 2021 Keynote temp.aac"
+
+# Session 10321 - Monday@WWDC21
+ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2021/10321/1/DB3216C0-2220-4AE8-8584-9620ABB91F65/cmaf/hvc/1440p_8100/hvc_1440p_8100.m3u8 -c copy "Session - 10321 temp.mp4"
+ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2021/10321/1/DB3216C0-2220-4AE8-8584-9620ABB91F65/cmaf/aac/lc_192/aac_lc_192.m3u8 -c copy "Session - 10321 temp.aac"
+ffmpeg -i "Session - 10321 temp.mp4" -i "Session - 10321 temp.aac" -c copy "Session 10321 - Monday@WWDC21 (1440p).mp4"
+rm "Session - 10321 temp.mp4"
+rm "Session - 10321 temp.aac"
