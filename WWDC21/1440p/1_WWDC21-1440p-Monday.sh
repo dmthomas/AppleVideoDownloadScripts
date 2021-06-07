@@ -22,3 +22,10 @@
 #rm "Session - 10691 temp.mp4"
 #rm "Session - 10691 temp.aac"
 #
+
+# WWDC21 Keynote
+ffmpeg -i https://p-events-delivery.akamaized.net/1805asrvgvurxcrkewleraugwqathmvg/vod_FbRMWBEvqAdggApZaUoqQJkJWhojfMfh/sdr_hvc_1440p_8100/prog_index.m3u8 -c copy "WWDC 2021 Keynote temp.mp4"
+ffmpeg -i https://p-events-delivery.akamaized.net/1805asrvgvurxcrkewleraugwqathmvg/vod_FbRMWBEvqAdggApZaUoqQJkJWhojfMfh/audio_main_en_2ch_aac_128/prog_index.m3u8 -c copy "WWDC 2021 Keynote temp.aac"
+ffmpeg -i "WWDC 2021 Keynote temp.mp4" -i "WWDC 2021 Keynote temp.aac" -c copy "Apple WWDC 2021 Keynote Address (1440p).mp4"
+rm "WWDC 2021 Keynote temp.mp4"
+rm "WWDC 2021 Keynote temp.aac"
