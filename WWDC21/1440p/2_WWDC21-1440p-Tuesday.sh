@@ -494,3 +494,19 @@ ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2021/10317/8/3E1F4F09-7
 ffmpeg -i "Session - 10317 temp.mp4" -i "Session - 10317 temp.aac" -c copy "Session 10317 - Out of this world... on to Mars (1440p).mp4"
 rm "Session - 10317 temp.mp4"
 rm "Session - 10317 temp.aac"
+
+# 60
+# Session 10309 - Tuesday's Mindful Cooldown for Coding… brought to you by Fitness+
+ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2021/10309/1/16A16616-AFF1-4E24-B6FF-92CB83CD6018/cmaf/hvc/1440p_8100/hvc_1440p_8100.m3u8 -c copy "Session - 10309 temp.mp4"
+ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2021/10309/1/16A16616-AFF1-4E24-B6FF-92CB83CD6018/cmaf/aac/lc_192/aac_lc_192.m3u8 -c copy "Session - 10309 temp.aac"
+ffmpeg -i "Session - 10309 temp.mp4" -i "Session - 10309 temp.aac" -c copy "Session 10309 - Tuesday's Mindful Cooldown for Coding… brought to you by Fitness+ (1440p).mp4"
+rm "Session - 10309 temp.mp4"
+rm "Session - 10309 temp.aac"
+
+# 61
+# Session 10322 - Tuesday@WWDC21
+ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2021/10322/2/C0AA6CCA-7BAF-4B5E-8A88-F500A98E8B15/cmaf/hvc/1440p_8100/hvc_1440p_8100.m3u8 -c copy "Session - 10322 temp.mp4"
+ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2021/10322/2/C0AA6CCA-7BAF-4B5E-8A88-F500A98E8B15/cmaf/aac/lc_192/aac_lc_192.m3u8 -c copy "Session - 10322 temp.aac"
+ffmpeg -i "Session - 10322 temp.mp4" -i "Session - 10322 temp.aac" -c copy "Session 10322 - Tuesday@WWDC21 (1440p).mp4"
+rm "Session - 10322 temp.mp4"
+rm "Session - 10322 temp.aac"
