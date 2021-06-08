@@ -30,6 +30,13 @@ ffmpeg -i "WWDC 2021 Keynote temp.mp4" -i "WWDC 2021 Keynote temp.aac" -c copy "
 rm "WWDC 2021 Keynote temp.mp4"
 rm "WWDC 2021 Keynote temp.aac"
 
+# WWDC21 Platforms State of the Union
+ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2021/102/2/C759AA08-C4FB-4066-B494-4A1589BD9A7E/cmaf/hvc/1440p_8100/hvc_1440p_8100.m3u8 -c copy "WWDC 2021 Platforms State of the Union temp.mp4"
+ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2021/102/2/C759AA08-C4FB-4066-B494-4A1589BD9A7E/cmaf/aac/lc_192/aac_lc_192.m3u8 -c copy "WWDC 2021 Platforms State of the Union temp.aac"
+ffmpeg -i "WWDC 2021 Platforms State of the Union temp.mp4" -i "WWDC 2021 Platforms State of the Union temp.aac" -c copy "WWDC 2021 Platforms State of the Union (1440p).mp4"
+rm "WWDC 2021 Platforms State of the Union temp.mp4"
+rm "WWDC 2021 Platforms State of the Union temp.aac"
+
 # Session 10321 - Monday@WWDC21
 ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2021/10321/1/DB3216C0-2220-4AE8-8584-9620ABB91F65/cmaf/hvc/1440p_8100/hvc_1440p_8100.m3u8 -c copy "Session - 10321 temp.mp4"
 ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2021/10321/1/DB3216C0-2220-4AE8-8584-9620ABB91F65/cmaf/aac/lc_192/aac_lc_192.m3u8 -c copy "Session - 10321 temp.aac"
