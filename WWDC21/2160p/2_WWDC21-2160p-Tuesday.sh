@@ -219,7 +219,7 @@ rm "Session - 10265 temp.aac"
 # Session 10132 - Meet async/await in Swift
 ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2021/10132/4/B2DD09FD-0D18-4E24-82C2-0736DF914F66/cmaf/hvc/2160p_16800/hvc_2160p_16800.m3u8 -c copy "Session - 10132 temp.mp4"
 ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2021/10132/4/B2DD09FD-0D18-4E24-82C2-0736DF914F66/cmaf/aac/lc_192/aac_lc_192.m3u8 -c copy "Session - 10132 temp.aac"
-ffmpeg -i "Session - 10132 temp.mp4" -i "Session - 10132 temp.aac" -c copy "Session 10132 - Meet async/await in Swift (2160p).mp4"
+ffmpeg -i "Session - 10132 temp.mp4" -i "Session - 10132 temp.aac" -c copy "Session 10132 - Meet async-await in Swift (2160p).mp4"
 rm "Session - 10132 temp.mp4"
 rm "Session - 10132 temp.aac"
 
@@ -467,7 +467,7 @@ rm "Session - 10192 temp.aac"
 # Session 10066 - What’s new in Game Center: Widgets, friends, and multiplayer improvements
 ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2021/10066/4/41B04DA6-0AE3-41B6-9CE1-CF48AAAF9439/cmaf/hvc/2160p_16800/hvc_2160p_16800.m3u8 -c copy "Session - 10066 temp.mp4"
 ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2021/10066/4/41B04DA6-0AE3-41B6-9CE1-CF48AAAF9439/cmaf/aac/lc_192/aac_lc_192.m3u8 -c copy "Session - 10066 temp.aac"
-ffmpeg -i "Session - 10066 temp.mp4" -i "Session - 10066 temp.aac" -c copy "Session 10066 - What’s new in Game Center: Widgets, friends, and multiplayer improvements (2160p).mp4"
+ffmpeg -i "Session - 10066 temp.mp4" -i "Session - 10066 temp.aac" -c copy "Session 10066 - What’s new in Game Center - Widgets, friends, and multiplayer improvements (2160p).mp4"
 rm "Session - 10066 temp.mp4"
 rm "Session - 10066 temp.aac"
 
@@ -486,3 +486,11 @@ ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2021/10259/4/F6B7B6EB-8
 ffmpeg -i "Session - 10259 temp.mp4" -i "Session - 10259 temp.aac" -c copy "Session 10259 - Your guide to keyboard layout (2160p).mp4"
 rm "Session - 10259 temp.mp4"
 rm "Session - 10259 temp.aac"
+
+# 59
+# Session 10317 - Out of this world... on to Mars
+ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2021/10317/8/3E1F4F09-7847-40F9-8D2A-0355456D569E/cmaf/hvc/2160p_16800/hvc_2160p_16800.m3u8 -c copy "Session - 10317 temp.mp4"
+ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2021/10317/8/3E1F4F09-7847-40F9-8D2A-0355456D569E/cmaf/aac/lc_192/aac_lc_192.m3u8 -c copy "Session - 10317 temp.aac"
+ffmpeg -i "Session - 10317 temp.mp4" -i "Session - 10317 temp.aac" -c copy "Session 10317 - Out of this world... on to Mars (2160p).mp4"
+rm "Session - 10317 temp.mp4"
+rm "Session - 10317 temp.aac"
