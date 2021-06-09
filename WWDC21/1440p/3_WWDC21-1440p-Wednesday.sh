@@ -534,3 +534,19 @@ ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2021/10308/18/BA664ADF-
 ffmpeg -i "Session - 10308 temp.mp4" -i "Session - 10308 temp.aac" -c copy "Session 10308 - Accessibility by design - An Apple Watch for everyone (1440p).mp4"
 rm "Session - 10308 temp.mp4"
 rm "Session - 10308 temp.aac"
+
+# 65
+# Session 10310 - Wednesday's Mindful Cooldown for Coding… brought to you by Fitness+
+ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2021/10310/2/AFB284B2-14EC-4654-AB17-D4701F2C77F1/cmaf/hvc/1440p_8100/hvc_1440p_8100.m3u8 -c copy "Session - 10310 temp.mp4"
+ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2021/10310/2/AFB284B2-14EC-4654-AB17-D4701F2C77F1/cmaf/aac/lc_192/aac_lc_192.m3u8 -c copy "Session - 10310 temp.aac"
+ffmpeg -i "Session - 10310 temp.mp4" -i "Session - 10310 temp.aac" -c copy "Session 10310 - Wednesday's Mindful Cooldown for Coding… brought to you by Fitness+ (1440p).mp4"
+rm "Session - 10310 temp.mp4"
+rm "Session - 10310 temp.aac"
+
+# 66
+# Session 10323 - Wednesday@WWDC21
+ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2021/10323/1/8F1109CF-AA1F-4964-9984-BF7B74C30F38/cmaf/hvc/1440p_8100/hvc_1440p_8100.m3u8 -c copy "Session - 10323 temp.mp4"
+ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2021/10323/1/8F1109CF-AA1F-4964-9984-BF7B74C30F38/cmaf/aac/lc_192/aac_lc_192.m3u8 -c copy "Session - 10323 temp.aac"
+ffmpeg -i "Session - 10323 temp.mp4" -i "Session - 10323 temp.aac" -c copy "Session 10323 - Wednesday@WWDC21 (1440p).mp4"
+rm "Session - 10323 temp.mp4"
+rm "Session - 10323 temp.aac"
