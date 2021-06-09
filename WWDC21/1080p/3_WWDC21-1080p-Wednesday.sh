@@ -526,3 +526,11 @@ ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2021/10097/5/4D377285-9
 ffmpeg -i "Session - 10097 temp.mp4" -i "Session - 10097 temp.aac" -c copy "Session 10097 - What’s new in SF Symbols (1080p).mp4"
 rm "Session - 10097 temp.mp4"
 rm "Session - 10097 temp.aac"
+
+# 64
+# Session 10308 - Accessibility by design: An Apple Watch for everyone
+ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2021/10308/18/BA664ADF-042F-4084-8565-61FC83578C92/cmaf/hvc/1080p_5800/hvc_1080p_5800.m3u8 -c copy "Session - 10308 temp.mp4"
+ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2021/10308/18/BA664ADF-042F-4084-8565-61FC83578C92/cmaf/aac/lc_192/aac_lc_192.m3u8 -c copy "Session - 10308 temp.aac"
+ffmpeg -i "Session - 10308 temp.mp4" -i "Session - 10308 temp.aac" -c copy "Session 10308 - Accessibility by design: An Apple Watch for everyone (1080p).mp4"
+rm "Session - 10308 temp.mp4"
+rm "Session - 10308 temp.aac"
