@@ -531,6 +531,6 @@ rm "Session - 10097 temp.aac"
 # Session 10308 - Accessibility by design: An Apple Watch for everyone
 ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2021/10308/18/BA664ADF-042F-4084-8565-61FC83578C92/cmaf/hvc/2160p_16800/hvc_2160p_16800.m3u8 -c copy "Session - 10308 temp.mp4"
 ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2021/10308/18/BA664ADF-042F-4084-8565-61FC83578C92/cmaf/aac/lc_192/aac_lc_192.m3u8 -c copy "Session - 10308 temp.aac"
-ffmpeg -i "Session - 10308 temp.mp4" -i "Session - 10308 temp.aac" -c copy "Session 10308 - Accessibility by design: An Apple Watch for everyone (2160p).mp4"
+ffmpeg -i "Session - 10308 temp.mp4" -i "Session - 10308 temp.aac" -c copy "Session 10308 - Accessibility by design - An Apple Watch for everyone (2160p).mp4"
 rm "Session - 10308 temp.mp4"
 rm "Session - 10308 temp.aac"
