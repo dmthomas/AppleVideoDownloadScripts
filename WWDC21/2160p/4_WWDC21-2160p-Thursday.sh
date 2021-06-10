@@ -358,3 +358,35 @@ ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2021/10254/4/528331E5-D
 ffmpeg -i "Session - 10254 temp.mp4" -i "Session - 10254 temp.aac" -c copy "Session 10254 - Swift concurrency - Behind the scenes (2160p).mp4"
 rm "Session - 10254 temp.mp4"
 rm "Session - 10254 temp.aac"
+
+# 43
+# Session 10316 - Meditation for fidgety skeptics
+ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2021/10316/8/F3A4B359-293E-4760-A055-B8998AC4CE02/cmaf/hvc/2160p_16800/hvc_2160p_16800.m3u8 -c copy "Session - 10316 temp.mp4"
+ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2021/10316/8/F3A4B359-293E-4760-A055-B8998AC4CE02/cmaf/aac/lc_192/aac_lc_192.m3u8 -c copy "Session - 10316 temp.aac"
+ffmpeg -i "Session - 10316 temp.mp4" -i "Session - 10316 temp.aac" -c copy "Session 10316 - Meditation for fidgety skeptics (2160p).mp4"
+rm "Session - 10316 temp.mp4"
+rm "Session - 10316 temp.aac"
+
+# 44
+# Session 103 - WWDC21 Apple Design Awards
+ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2021/103/11/E4F0C677-1137-4FBD-B02B-11F849D6D6FA/cmaf/hvc/2160p_16800/hvc_2160p_16800.m3u8 -c copy "Session - 103 temp.mp4"
+ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2021/103/11/E4F0C677-1137-4FBD-B02B-11F849D6D6FA/cmaf/aac/lc_192/aac_lc_192.m3u8 -c copy "Session - 103 temp.aac"
+ffmpeg -i "Session - 103 temp.mp4" -i "Session - 103 temp.aac" -c copy "Session 103 - WWDC21 Apple Design Awards (2160).mp4"
+rm "Session - 103 temp.mp4"
+rm "Session - 103 temp.aac"
+
+# 45
+# Session 10314 - Thursday's Mindful Cooldown for Coding… brought to you by Fitness+
+ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2021/10314/1/DC0C9570-CD79-4791-ABA0-F2A2700CDBCA/cmaf/hvc/2160p_16800/hvc_2160p_16800.m3u8 -c copy "Session - 10314 temp.mp4"
+ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2021/10314/1/DC0C9570-CD79-4791-ABA0-F2A2700CDBCA/cmaf/aac/lc_192/aac_lc_192.m3u8 -c copy "Session - 10314 temp.aac"
+ffmpeg -i "Session - 10314 temp.mp4" -i "Session - 10314 temp.aac" -c copy "Session 10314 - Thursday's Mindful Cooldown for Coding… brought to you by Fitness+ (2160p).mp4"
+rm "Session - 10314 temp.mp4"
+rm "Session - 10314 temp.aac"
+
+# 46
+# Session 10324 - Thursday@WWDC21
+ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2021/10324/1/BC5C09AF-2CA6-44C8-B371-FD5706AF4558/cmaf/hvc/2160p_16800/hvc_2160p_16800.m3u8 -c copy "Session - 10324 temp.mp4"
+ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2021/10324/1/BC5C09AF-2CA6-44C8-B371-FD5706AF4558/cmaf/aac/lc_192/aac_lc_192.m3u8 -c copy "Session - 10324 temp.aac"
+ffmpeg -i "Session - 10324 temp.mp4" -i "Session - 10324 temp.aac" -c copy "Session 10324 - Thursday@WWDC21 (2160p).mp4"
+rm "Session - 10324 temp.mp4"
+rm "Session - 10324 temp.aac"
