@@ -254,3 +254,27 @@ ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2021/10077/9/BE748DC5-3
 ffmpeg -i "Session - 10077 temp.mp4" -i "Session - 10077 temp.aac" -c copy "Session 10077 - Create 3D workflows with USD (1080p).mp4"
 rm "Session - 10077 temp.mp4"
 rm "Session - 10077 temp.aac"
+
+# 30
+# Session 10318 - Developer spotlight - Accessibility
+ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2021/10318/12/ACAF8CC7-BEA9-44B2-A056-557CDC67692C/cmaf/hvc/1080p_5800/hvc_1080p_5800.m3u8 -c copy "Session - 10318 temp.mp4"
+ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2021/10318/12/ACAF8CC7-BEA9-44B2-A056-557CDC67692C/cmaf/aac/lc_192/aac_lc_192.m3u8 -c copy "Session - 10318 temp.aac"
+ffmpeg -i "Session - 10318 temp.mp4" -i "Session - 10318 temp.aac" -c copy "Session 10318 - Developer spotlight - Accessibility (1080p).mp4"
+rm "Session - 10318 temp.mp4"
+rm "Session - 10318 temp.aac"
+
+# 31
+# Session 10325 - Friday@WWDC21
+ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2021/10325/1/1B2FDBA9-AB3E-4194-B18F-FE4C3CA435B2/cmaf/hvc/1080p_5800/hvc_1080p_5800.m3u8 -c copy "Session - 10325 temp.mp4"
+ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2021/10325/1/1B2FDBA9-AB3E-4194-B18F-FE4C3CA435B2/cmaf/aac/lc_192/aac_lc_192.m3u8 -c copy "Session - 10325 temp.aac"
+ffmpeg -i "Session - 10325 temp.mp4" -i "Session - 10325 temp.aac" -c copy "Session 10325 - Friday@WWDC21 (1080p).mp4"
+rm "Session - 10325 temp.mp4"
+rm "Session - 10325 temp.aac"
+
+# 32
+# Session 10315 - Friday's Mindful Cooldown for Coding… brought to you by Fitness+
+ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2021/10315/1/5A39EBEA-421E-4995-B514-30DF91150838/cmaf/hvc/1080p_5800/hvc_1080p_5800.m3u8 -c copy "Session - 10315 temp.mp4"
+ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2021/10315/1/5A39EBEA-421E-4995-B514-30DF91150838/cmaf/aac/lc_192/aac_lc_192.m3u8 -c copy "Session - 10315 temp.aac"
+ffmpeg -i "Session - 10315 temp.mp4" -i "Session - 10315 temp.aac" -c copy "Session 10315 - Friday's Mindful Cooldown for Coding… brought to you by Fitness+ (1080p).mp4"
+rm "Session - 10315 temp.mp4"
+rm "Session - 10315 temp.aac"
