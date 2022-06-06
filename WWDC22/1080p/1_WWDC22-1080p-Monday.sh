@@ -24,5 +24,23 @@
 #
 
 # WWDC22 Keynote
+ffmpeg -i https://events-delivery.apple.com/0205eyyhwbbqexozkwmgccegwnjyrktg/vod_main_KYVtRmtKMbxMmJHvKTwKJVQuxEmzBjPm/sdr_hvc_1080p_7000/prog_index.m3u8 -c copy "WWDC 2022 Keynote temp.mp4"
+ffmpeg -i https://events-delivery.apple.com/0205eyyhwbbqexozkwmgccegwnjyrktg/vod_main_KYVtRmtKMbxMmJHvKTwKJVQuxEmzBjPm/audio_main_en_2ch_aac_128/prog_index.m3u8 -c copy "WWDC 2022 Keynote temp.aac"
+
+#comment out the following three lines if you don't want Dolby Atmos audio
+ffmpeg -i https://events-delivery.apple.com/0205eyyhwbbqexozkwmgccegwnjyrktg/vod_main_KYVtRmtKMbxMmJHvKTwKJVQuxEmzBjPm/audio_main_en_16ch_atmos_640/prog_index.m3u8 -c copy "WWDC 2022 Keynote temp atmos.mp4"
+ffmpeg -i "WWDC 2022 Keynote temp.mp4" -i "WWDC 2022 Keynote temp atmos.mp4" -i "WWDC 2022 Keynote temp.aac" -map 0 -map 1 -map 2 -metadata:s:a:0 title="Dolby Atmos" -metadata:s:a:0 language=eng -metadata:s:a:1 title="Stereo" -metadata:s:a:1 language=eng -c copy "Apple WWDC 2022 Keynote Address (1080p).mp4"
+rm "WWDC 2022 Keynote temp atmos.mp4"
+
+#uncomment the following line if you didn't want Dolby Atmos audio
+#ffmpeg -i "WWDC 2022 Keynote temp.mp4" -i "WWDC 2022 Keynote temp.aac" -c copy "Apple WWDC 2022 Keynote Address (2160p).mp4"
+
+rm "WWDC 2022 Keynote temp.mp4"
+rm "WWDC 2022 Keynote temp.aac"
 
 # WWDC22 Platforms State of the Union
+ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2022/102/3/29AB52D7-09CF-4A22-8C26-84AEB4A90097/cmaf/hvc/1080p_5800/hvc_1080p_5800.m3u8 -c copy "WWDC 2022 Platforms State of the Union temp.mp4"
+ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2022/102/3/29AB52D7-09CF-4A22-8C26-84AEB4A90097/cmaf/aac/lc_192/aac_lc_192.m3u8 -c copy "WWDC 2022 Platforms State of the Union temp.aac"
+ffmpeg -i "WWDC 2022 Platforms State of the Union temp.mp4" -i "WWDC 2022 Platforms State of the Union temp.aac" -c copy "WWDC 2022 Platforms State of the Union (1080p).mp4"
+rm "WWDC 2022 Platforms State of the Union temp.mp4"
+rm "WWDC 2022 Platforms State of the Union temp.aac"
