@@ -33,7 +33,7 @@ ffmpeg -i "WWDC 2022 Keynote temp.mp4" -i "WWDC 2022 Keynote temp atmos.mp4" -i 
 rm "WWDC 2022 Keynote temp atmos.mp4"
 
 #uncomment the following line if you didn't want Dolby Atmos audio
-#ffmpeg -i "WWDC 2022 Keynote temp.mp4" -i "WWDC 2022 Keynote temp.aac" -c copy "Apple WWDC 2022 Keynote Address (2160p).mp4"
+#ffmpeg -i "WWDC 2022 Keynote temp.mp4" -i "WWDC 2022 Keynote temp.aac" -c copy "Apple WWDC 2022 Keynote Address (1080p).mp4"
 
 rm "WWDC 2022 Keynote temp.mp4"
 rm "WWDC 2022 Keynote temp.aac"
