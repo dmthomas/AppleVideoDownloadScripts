@@ -78,7 +78,7 @@ rm "WWDC 2022 Platforms State of the Union temp de.vtt"
 rm "WWDC 2022 Platforms State of the Union temp es.vtt"
 
 # 2022 Apple Design Awards
-ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2022/103/3/AFC3701A-AC3C-4F5D-9AB3-1CDE42CB5763/cmaf/hvc/1440p_8100/hvc_1440p_8100.m3u88 -c copy "2022 Apple Design Awards temp.mp4"
+ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2022/103/3/AFC3701A-AC3C-4F5D-9AB3-1CDE42CB5763/cmaf/hvc/1440p_8100/hvc_1440p_8100.m3u8 -c copy "2022 Apple Design Awards temp.mp4"
 ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2022/103/3/AFC3701A-AC3C-4F5D-9AB3-1CDE42CB5763/cmaf/aac/lc_192/aac_lc_192.m3u8 -c copy "2022 Apple Design Awards temp.aac"
 
 ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2022/103/3/AFC3701A-AC3C-4F5D-9AB3-1CDE42CB5763/subtitles/eng/prog_index.m3u8 -c copy "2022 Apple Design Awards temp en.vtt"
