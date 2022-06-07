@@ -51,3 +51,10 @@ ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2022/103/3/AFC3701A-AC3
 ffmpeg -i "2022 Apple Design Awardsn temp.mp4" -i "2022 Apple Design Awards temp.aac" -c copy "2022 Apple Design Awards (2160p).mp4"
 rm "2022 Apple Design Awards temp.mp4"
 rm "2022 Apple Design Awards temp.aac"
+
+# Session 110929 - Monday@WWDC22
+ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2022/110929/1/E9996C71-5D71-46C7-BC47-4A26302DA7D6/cmaf/hvc/2160p_16800/hvc_2160p_16800.m3u8 -c copy "Session - 110929 temp.mp4"
+ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2022/110929/1/E9996C71-5D71-46C7-BC47-4A26302DA7D6/cmaf/aac/lc_192/aac_lc_192.m3u8 -c copy "Session - 110929 temp.aac"
+ffmpeg -i "Session - 110929 temp.mp4" -i "Session - 110929 temp.aac" -c copy "Session 110929 - Monday@WWDC22 (2160p).mp4"
+rm "Session - 110929 temp.mp4"
+rm "Session - 110929 temp.aac"
