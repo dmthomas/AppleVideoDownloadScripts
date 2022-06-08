@@ -1,4 +1,4 @@
-# Script to download Tuesday's WWDC 21 session videos in the highest 1080p video and audio
+# Script to download Tuesday's WWDC 22 session videos in the highest 1080p video and audio
 # You may have to update ffmpeg before using this script. I needed version 4.3 or higher to successfully download the videos.
 #
 # If you want the lower bitrate audio, do a find/replace of "audio_english_192" with "audio_english_64"
