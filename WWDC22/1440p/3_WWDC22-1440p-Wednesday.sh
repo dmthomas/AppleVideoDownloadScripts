@@ -214,9 +214,19 @@ rm "Session - 110352 temp.aac"
 # 20
 # Session 10113 - Explore EDR on iOS
 ffmpeg -i https://events-delivery.apple.com/wwdc22/S6609-rUNWRhfHEGjdhBffWQLkyEHB/sdr_hvc_1440p_8100/prog_index.m3u8 -c copy "Session - 10113 temp.mp4"
-ffmpeg -i https://events-delivery.apple.com/wwdc22/S6609-rUNWRhfHEGjdhBffWQLkyEHB/cc/en/en.m3u8 -c copy "Session - 10113 temp.aac"
-ffmpeg -i https://events-delivery.apple.com/wwdc22/S6609-rUNWRhfHEGjdhBffWQLkyEHB/audio_main_en_2ch_aac_128/prog_index.m3u8 -c copy "Session - 10113 temp.vtt"
+ffmpeg -i https://events-delivery.apple.com/wwdc22/S6609-rUNWRhfHEGjdhBffWQLkyEHB/audio_main_en_2ch_aac_128/prog_index.m3u8 -c copy "Session - 10113 temp.aac"
+ffmpeg -i https://events-delivery.apple.com/wwdc22/S6609-rUNWRhfHEGjdhBffWQLkyEHB/cc/en/en.m3u8 -c copy "Session - 10113 temp.vtt"
 ffmpeg -i "Session - 10113 temp.mp4" -i "Session - 10113 temp.aac" -i "Session - 10113 temp.vtt" -map 0:v -map 1:a -acodec copy -vcodec copy -map 2 -c:s:0 mov_text -metadata:s:s:0 language=eng "Session 10113 - Explore EDR on iOS (1440p).mp4"
+rm "Session - 10113 temp.vtt"
+rm "Session - 10113 temp.mp4"
+rm "Session - 10113 temp.aac"
+
+# 20b HDR
+# Session 10113 - Explore EDR on iOS
+ffmpeg -i https://events-delivery.apple.com/wwdc22/S6609-rUNWRhfHEGjdhBffWQLkyEHB/hdr10_hvc_1440p_9700/prog_index.m3u8 -c copy "Session - 10113 temp.mp4"
+ffmpeg -i https://events-delivery.apple.com/wwdc22/S6609-rUNWRhfHEGjdhBffWQLkyEHB/audio_main_en_2ch_aac_128/prog_index.m3u8 -c copy "Session - 10113 temp.aac"
+ffmpeg -i https://events-delivery.apple.com/wwdc22/S6609-rUNWRhfHEGjdhBffWQLkyEHB/cc/en/en.m3u8 -c copy "Session - 10113 temp.vtt"
+ffmpeg -i "Session - 10113 temp.mp4" -i "Session - 10113 temp.aac" -i "Session - 10113 temp.vtt" -map 0:v -map 1:a -acodec copy -vcodec copy -map 2 -c:s:0 mov_text -metadata:s:s:0 language=eng "Session 10113 - Explore EDR on iOS (1440p HDR).mp4"
 rm "Session - 10113 temp.vtt"
 rm "Session - 10113 temp.mp4"
 rm "Session - 10113 temp.aac"
