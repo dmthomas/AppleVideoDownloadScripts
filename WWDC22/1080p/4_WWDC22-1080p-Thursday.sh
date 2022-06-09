@@ -155,7 +155,7 @@ rm "Session - 10053 temp.aac"
 
 # 14
 # Session 10114 - Display EDR content with Core Image, Metal, and SwiftUI
-ffmpeg -i https://events-delivery.apple.com/wwdc22/S6610-wbTYzbGrJjXGpwDYrMCraMxm/sdr_avc_1080p_7000/prog_index.m3u8 -c copy "Session - 10114 temp.mp4"
+ffmpeg -i https://events-delivery.apple.com/wwdc22/S6610-wbTYzbGrJjXGpwDYrMCraMxm/sdr_hvc_1080p_7000/prog_index.m3u8 -c copy "Session - 10114 temp.mp4"
 ffmpeg -i https://events-delivery.apple.com/wwdc22/S6610-wbTYzbGrJjXGpwDYrMCraMxm/audio_main_en_2ch_aac_128/prog_index.m3u8 -c copy "Session - 10114 temp.aac"
 ffmpeg -i https://events-delivery.apple.com/wwdc22/S6610-wbTYzbGrJjXGpwDYrMCraMxm/cc/en/en.m3u8 -c copy "Session - 10114 temp.vtt"
 ffmpeg -i "Session - 10114 temp.mp4" -i "Session - 10114 temp.aac" -i "Session - 10114 temp.vtt" -map 0:v -map 1:a -acodec copy -vcodec copy -map 2 -c:s:0 mov_text -metadata:s:s:0 language=eng "Session 10114 - Display EDR content with Core Image, Metal, and SwiftUI (1080p).mp4"
@@ -165,7 +165,7 @@ rm "Session - 10114 temp.aac"
 
 # 14b HDR
 # Session 10114 - Display EDR content with Core Image, Metal, and SwiftUI
-ffmpeg -i https://events-delivery.apple.com/wwdc22/S6610-wbTYzbGrJjXGpwDYrMCraMxm/hdr10_avc_1080p_7000/prog_index.m3u8 -c copy "Session - 10114 temp.mp4"
+ffmpeg -i https://events-delivery.apple.com/wwdc22/S6610-wbTYzbGrJjXGpwDYrMCraMxm/hdr10_hvc_1080p_7000/prog_index.m3u8 -c copy "Session - 10114 temp.mp4"
 ffmpeg -i https://events-delivery.apple.com/wwdc22/S6610-wbTYzbGrJjXGpwDYrMCraMxm/audio_main_en_2ch_aac_128/prog_index.m3u8 -c copy "Session - 10114 temp.aac"
 ffmpeg -i https://events-delivery.apple.com/wwdc22/S6610-wbTYzbGrJjXGpwDYrMCraMxm/cc/en/en.m3u8 -c copy "Session - 10114 temp.vtt"
 ffmpeg -i "Session - 10114 temp.mp4" -i "Session - 10114 temp.aac" -i "Session - 10114 temp.vtt" -map 0:v -map 1:a -acodec copy -vcodec copy -map 2 -c:s:0 mov_text -metadata:s:s:0 language=eng "Session 10114 - Display EDR content with Core Image, Metal, and SwiftUI (1080p HDR).mp4"
