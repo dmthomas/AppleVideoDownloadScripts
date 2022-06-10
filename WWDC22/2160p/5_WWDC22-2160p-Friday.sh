@@ -242,3 +242,13 @@ ffmpeg -i "Session - 10049 temp.mp4" -i "Session - 10049 temp.aac" -i "Session -
 rm "Session - 10049 temp.vtt"
 rm "Session - 10049 temp.mp4"
 rm "Session - 10049 temp.aac"
+
+# 23
+# Session 110933 - WWDC22 Friday recap
+ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2022/110933/1/CF0900A1-24C8-4C33-B6D1-18B2343DC206/cmaf/hvc/2160p_16800/hvc_2160p_16800.m3u8 -c copy "Session - 110933 temp.mp4"
+ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2022/110933/1/CF0900A1-24C8-4C33-B6D1-18B2343DC206/cmaf/aac/lc_192/aac_lc_192.m3u8 -c copy "Session - 110933 temp.aac"
+ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2022/110933/1/CF0900A1-24C8-4C33-B6D1-18B2343DC206/subtitles/eng/prog_index.m3u8 -c copy "Session - 110933 temp.vtt"
+ffmpeg -i "Session - 110933 temp.mp4" -i "Session - 110933 temp.aac" -i "Session - 110933 temp.vtt" -map 0:v -map 1:a -acodec copy -vcodec copy -map 2 -c:s:0 mov_text -metadata:s:s:0 language=eng "Session 110933 - WWDC22 Friday recap (2160p).mp4"
+rm "Session - 110933 temp.vtt"
+rm "Session - 110933 temp.mp4"
+rm "Session - 110933 temp.aac"
