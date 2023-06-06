@@ -544,16 +544,6 @@ rm "Session - 10153 temp.mp4"
 rm "Session - 10153 temp.aac"
 
 # 53
-# Session 111488 - What Apple developers need to know at WWDC23
-ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2023/111488/1/B9EE6A67-C5D1-4554-905E-697296D08CA0/cmaf/hvc/1440p_8100/hvc_1440p_8100.m3u8 -c copy "Session - 111488 temp.mp4"
-ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2023/111488/1/B9EE6A67-C5D1-4554-905E-697296D08CA0/cmaf/aac/lc_192/aac_lc_192.m3u8 -c copy "Session - 111488 temp.aac"
-ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2023/111488/1/B9EE6A67-C5D1-4554-905E-697296D08CA0/subtitles/eng/prog_index.m3u8 -c copy "Session - 111488 temp.vtt"
-ffmpeg -i "Session - 111488 temp.mp4" -i "Session - 111488 temp.aac" -i "Session - 111488 temp.vtt" -map 0:v -map 1:a -acodec copy -vcodec copy -map 2 -c:s:0 mov_text -metadata:s:s:0 language=eng "Session 111488 - What Apple developers need to know at WWDC23 (1440p).mp4"
-rm "Session - 111488 temp.vtt"
-rm "Session - 111488 temp.mp4"
-rm "Session - 111488 temp.aac"
-
-# 54
 # Session 10140 - What's new in StoreKit 2 and StoreKit Testing in Xcode
 ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2023/10140/4/F65F9FA7-3629-45A5-A4D6-A90BE40BE5E9/cmaf/hvc/1440p_8100/hvc_1440p_8100.m3u8 -c copy "Session - 10140 temp.mp4"
 ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2023/10140/4/F65F9FA7-3629-45A5-A4D6-A90BE40BE5E9/cmaf/aac/lc_192/aac_lc_192.m3u8 -c copy "Session - 10140 temp.aac"
@@ -563,7 +553,7 @@ rm "Session - 10140 temp.vtt"
 rm "Session - 10140 temp.mp4"
 rm "Session - 10140 temp.aac"
 
-# 55
+# 54
 # Session 10148 - What's new in SwiftUI
 ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2023/10148/5/670CE43A-A151-47A9-BBFA-32FE5E86C679/cmaf/hvc/1440p_8100/hvc_1440p_8100.m3u8 -c copy "Session - 10148 temp.mp4"
 ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2023/10148/5/670CE43A-A151-47A9-BBFA-32FE5E86C679/cmaf/aac/lc_192/aac_lc_192.m3u8 -c copy "Session - 10148 temp.aac"
@@ -573,7 +563,7 @@ rm "Session - 10148 temp.vtt"
 rm "Session - 10148 temp.mp4"
 rm "Session - 10148 temp.aac"
 
-# 56
+# 55
 # Session 10055 - What's new in UIKit
 ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2023/10055/4/7F22FD85-1611-456E-875B-966A87E16636/cmaf/hvc/1440p_8100/hvc_1440p_8100.m3u8 -c copy "Session - 10055 temp.mp4"
 ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2023/10055/4/7F22FD85-1611-456E-875B-966A87E16636/cmaf/aac/lc_192/aac_lc_192.m3u8 -c copy "Session - 10055 temp.aac"
@@ -583,7 +573,7 @@ rm "Session - 10055 temp.vtt"
 rm "Session - 10055 temp.mp4"
 rm "Session - 10055 temp.aac"
 
-# 57
+# 56
 # Session 10048 - What's new in VisionKit
 ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2023/10048/4/55A7BD30-D197-43F5-B35B-74973DEDD898/cmaf/hvc/1440p_8100/hvc_1440p_8100.m3u8 -c copy "Session - 10048 temp.mp4"
 ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2023/10048/4/55A7BD30-D197-43F5-B35B-74973DEDD898/cmaf/aac/lc_192/aac_lc_192.m3u8 -c copy "Session - 10048 temp.aac"
@@ -593,7 +583,7 @@ rm "Session - 10048 temp.vtt"
 rm "Session - 10048 temp.mp4"
 rm "Session - 10048 temp.aac"
 
-# 58
+# 57
 # Session 10120 - What's new in web apps
 ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2023/10120/4/C81200EB-45AA-47BF-B173-AD1D2EFE80C6/cmaf/hvc/1440p_8100/hvc_1440p_8100.m3u8 -c copy "Session - 10120 temp.mp4"
 ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2023/10120/4/C81200EB-45AA-47BF-B173-AD1D2EFE80C6/cmaf/aac/lc_192/aac_lc_192.m3u8 -c copy "Session - 10120 temp.aac"
@@ -603,7 +593,7 @@ rm "Session - 10120 temp.vtt"
 rm "Session - 10120 temp.mp4"
 rm "Session - 10120 temp.aac"
 
-# 59
+# 58
 # Session 10165 - What's new in Xcode 15
 ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2023/10165/5/C61041BB-AC4B-41C2-982C-6476B513F891/cmaf/hvc/1440p_8100/hvc_1440p_8100.m3u8 -c copy "Session - 10165 temp.mp4"
 ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2023/10165/5/C61041BB-AC4B-41C2-982C-6476B513F891/cmaf/aac/lc_192/aac_lc_192.m3u8 -c copy "Session - 10165 temp.aac"
@@ -613,7 +603,7 @@ rm "Session - 10165 temp.vtt"
 rm "Session - 10165 temp.mp4"
 rm "Session - 10165 temp.aac"
 
-# 60
+# 59
 # Session 10040 - What’s new in managing Apple devices
 ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2023/10040/4/9811F773-822B-4DEA-8F00-612829F3DC0E/cmaf/hvc/1440p_8100/hvc_1440p_8100.m3u8 -c copy "Session - 10040 temp.mp4"
 ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2023/10040/4/9811F773-822B-4DEA-8F00-612829F3DC0E/cmaf/aac/lc_192/aac_lc_192.m3u8 -c copy "Session - 10040 temp.aac"
@@ -623,7 +613,7 @@ rm "Session - 10040 temp.vtt"
 rm "Session - 10040 temp.mp4"
 rm "Session - 10040 temp.aac"
 
-# 61
+# 60
 # Session 10197 - What’s new in SF Symbols 5
 ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2023/10197/4/01BB92C1-0F42-4AE4-A526-7C83DA02ACAD/cmaf/hvc/1440p_8100/hvc_1440p_8100.m3u8 -c copy "Session - 10197 temp.mp4"
 ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2023/10197/4/01BB92C1-0F42-4AE4-A526-7C83DA02ACAD/cmaf/aac/lc_192/aac_lc_192.m3u8 -c copy "Session - 10197 temp.aac"
@@ -633,7 +623,7 @@ rm "Session - 10197 temp.vtt"
 rm "Session - 10197 temp.mp4"
 rm "Session - 10197 temp.aac"
 
-# 62
+# 61
 # Session 10164 - What’s new in Swift
 ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2023/10164/4/6A73A62C-E994-4907-B0CD-58E632F43AF6/cmaf/hvc/1440p_8100/hvc_1440p_8100.m3u8 -c copy "Session - 10164 temp.mp4"
 ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2023/10164/4/6A73A62C-E994-4907-B0CD-58E632F43AF6/cmaf/aac/lc_192/aac_lc_192.m3u8 -c copy "Session - 10164 temp.aac"
@@ -643,7 +633,7 @@ rm "Session - 10164 temp.vtt"
 rm "Session - 10164 temp.mp4"
 rm "Session - 10164 temp.aac"
 
-# 63
+# 62
 # Session 10157 - Wind your way through advanced animations in SwiftUI
 ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2023/10157/4/11302D30-B890-47AB-B8B0-CA3D4A8F136F/cmaf/hvc/1440p_8100/hvc_1440p_8100.m3u8 -c copy "Session - 10157 temp.mp4"
 ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2023/10157/4/11302D30-B890-47AB-B8B0-CA3D4A8F136F/cmaf/aac/lc_192/aac_lc_192.m3u8 -c copy "Session - 10157 temp.aac"
@@ -653,7 +643,7 @@ rm "Session - 10157 temp.vtt"
 rm "Session - 10157 temp.mp4"
 rm "Session - 10157 temp.aac"
 
-# 64
+# 63
 # Session 10166 - Write Swift macros
 ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2023/10166/5/58425163-99DA-4506-A86E-A2D794244136/cmaf/hvc/1440p_8100/hvc_1440p_8100.m3u8 -c copy "Session - 10166 temp.mp4"
 ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2023/10166/5/58425163-99DA-4506-A86E-A2D794244136/cmaf/aac/lc_192/aac_lc_192.m3u8 -c copy "Session - 10166 temp.aac"
