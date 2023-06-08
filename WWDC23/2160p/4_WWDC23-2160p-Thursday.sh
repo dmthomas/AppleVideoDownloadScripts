@@ -224,6 +224,16 @@ rm "Session - 10049 temp.mp4"
 rm "Session - 10049 temp.aac"
 
 # 21
+# Session 10304 - Integrate with motorized iPhone stands using DockKit
+ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2023/10304/4/F0FF6E30-0DEE-40FF-B969-616952919D33/cmaf/hvc/2160p_16800/hvc_2160p_16800.m3u8 -c copy "Session - 10304 temp.mp4"
+ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2023/10304/4/F0FF6E30-0DEE-40FF-B969-616952919D33/cmaf/aac/lc_192/aac_lc_192.m3u8 -c copy "Session - 10304 temp.aac"
+ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2023/10304/4/F0FF6E30-0DEE-40FF-B969-616952919D33/subtitles/eng/prog_index.m3u8 -c copy "Session - 10304 temp.vtt"
+ffmpeg -i "Session - 10304 temp.mp4" -i "Session - 10304 temp.aac" -i "Session - 10304 temp.vtt" -map 0:v -map 1:a -acodec copy -vcodec copy -map 2 -c:s:0 mov_text -metadata:s:s:0 language=eng "Session 10304 - Integrate with motorized iPhone stands using DockKit (2160p).mp4"
+rm "Session - 10304 temp.vtt"
+rm "Session - 10304 temp.mp4"
+rm "Session - 10304 temp.aac"
+
+# 22
 # Session 10147 - Meet Core Location Monitor
 ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2023/10147/4/D414CF50-4EF2-43CA-B57D-0FB2F054F2FA/cmaf/hvc/2160p_16800/hvc_2160p_16800.m3u8 -c copy "Session - 10147 temp.mp4"
 ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2023/10147/4/D414CF50-4EF2-43CA-B57D-0FB2F054F2FA/cmaf/aac/lc_192/aac_lc_192.m3u8 -c copy "Session - 10147 temp.aac"
@@ -233,7 +243,7 @@ rm "Session - 10147 temp.vtt"
 rm "Session - 10147 temp.mp4"
 rm "Session - 10147 temp.aac"
 
-# 22
+# 23
 # Session 10143 - Meet the App Store Server Library 
 ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2023/10143/4/2A530FC7-FDC1-4CB7-AE05-57F3F22675C7/cmaf/hvc/2160p_16800/hvc_2160p_16800.m3u8 -c copy "Session - 10143 temp.mp4"
 ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2023/10143/4/2A530FC7-FDC1-4CB7-AE05-57F3F22675C7/cmaf/aac/lc_192/aac_lc_192.m3u8 -c copy "Session - 10143 temp.aac"
@@ -243,7 +253,7 @@ rm "Session - 10143 temp.vtt"
 rm "Session - 10143 temp.mp4"
 rm "Session - 10143 temp.aac"
 
-# 23
+# 24
 # Session 10189 - Migrate to SwiftData
 ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2023/10189/4/87485DA7-96D9-41FA-979E-1D0224B540C2/cmaf/hvc/2160p_16800/hvc_2160p_16800.m3u8 -c copy "Session - 10189 temp.mp4"
 ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2023/10189/4/87485DA7-96D9-41FA-979E-1D0224B540C2/cmaf/aac/lc_192/aac_lc_192.m3u8 -c copy "Session - 10189 temp.aac"
@@ -253,7 +263,7 @@ rm "Session - 10189 temp.vtt"
 rm "Session - 10189 temp.mp4"
 rm "Session - 10189 temp.aac"
 
-# 24
+# 25
 # Session 10127 - Optimize GPU renderers with Metal
 ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2023/10127/4/3C0D2C8A-18E1-4D60-8A77-71F7166622AE/cmaf/hvc/2160p_16800/hvc_2160p_16800.m3u8 -c copy "Session - 10127 temp.mp4"
 ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2023/10127/4/3C0D2C8A-18E1-4D60-8A77-71F7166622AE/cmaf/aac/lc_192/aac_lc_192.m3u8 -c copy "Session - 10127 temp.aac"
@@ -263,7 +273,7 @@ rm "Session - 10127 temp.vtt"
 rm "Session - 10127 temp.mp4"
 rm "Session - 10127 temp.aac"
 
-# 25
+# 26
 # Session 10050 - Optimize machine learning for Metal apps
 ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2023/10050/3/F8F473D7-87C0-4FB5-91DD-2E665CFC4239/cmaf/hvc/2160p_16800/hvc_2160p_16800.m3u8 -c copy "Session - 10050 temp.mp4"
 ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2023/10050/3/F8F473D7-87C0-4FB5-91DD-2E665CFC4239/cmaf/aac/lc_192/aac_lc_192.m3u8 -c copy "Session - 10050 temp.aac"
@@ -273,7 +283,7 @@ rm "Session - 10050 temp.vtt"
 rm "Session - 10050 temp.mp4"
 rm "Session - 10050 temp.aac"
 
-# 26
+# 27
 # Session 10266 - Protect your Mac app with environment constraints
 ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2023/10266/4/24189FC4-EAA7-44E2-B039-930BF35F451F/cmaf/hvc/2160p_16800/hvc_2160p_16800.m3u8 -c copy "Session - 10266 temp.mp4"
 ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2023/10266/4/24189FC4-EAA7-44E2-B039-930BF35F451F/cmaf/aac/lc_192/aac_lc_192.m3u8 -c copy "Session - 10266 temp.aac"
@@ -283,7 +293,7 @@ rm "Session - 10266 temp.vtt"
 rm "Session - 10266 temp.mp4"
 rm "Session - 10266 temp.aac"
 
-# 27
+# 28
 # Session 10250 - Prototype with Xcode Playgrounds
 ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2023/10250/3/A3F1820C-593C-4DF2-A36B-F95FA81B1BBC/cmaf/hvc/2160p_16800/hvc_2160p_16800.m3u8 -c copy "Session - 10250 temp.mp4"
 ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2023/10250/3/A3F1820C-593C-4DF2-A36B-F95FA81B1BBC/cmaf/aac/lc_192/aac_lc_192.m3u8 -c copy "Session - 10250 temp.aac"
@@ -293,7 +303,7 @@ rm "Session - 10250 temp.vtt"
 rm "Session - 10250 temp.mp4"
 rm "Session - 10250 temp.aac"
 
-# 28
+# 29
 # Session 10004 - Reduce network delays with L4S
 ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2023/10004/4/49EBBF59-4DE7-42C2-AC03-9CD32C46DE74/cmaf/hvc/2160p_16800/hvc_2160p_16800.m3u8 -c copy "Session - 10004 temp.mp4"
 ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2023/10004/4/49EBBF59-4DE7-42C2-AC03-9CD32C46DE74/cmaf/aac/lc_192/aac_lc_192.m3u8 -c copy "Session - 10004 temp.aac"
@@ -303,7 +313,17 @@ rm "Session - 10004 temp.vtt"
 rm "Session - 10004 temp.mp4"
 rm "Session - 10004 temp.aac"
 
-# 29
+# 30
+# Session 10106 - Support external cameras in your iPadOS app 
+ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2023/10106/4/AE945003-3B1E-40CF-87F1-BD6F6E3EDD0F/cmaf/hvc/2160p_16800/hvc_2160p_16800.m3u8 -c copy "Session - 10106 temp.mp4"
+ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2023/10106/4/AE945003-3B1E-40CF-87F1-BD6F6E3EDD0F/cmaf/aac/lc_192/aac_lc_192.m3u8 -c copy "Session - 10106 temp.aac"
+ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2023/10106/4/AE945003-3B1E-40CF-87F1-BD6F6E3EDD0F/subtitles/eng/prog_index.m3u8 -c copy "Session - 10106 temp.vtt"
+ffmpeg -i "Session - 10106 temp.mp4" -i "Session - 10106 temp.aac" -i "Session - 10106 temp.vtt" -map 0:v -map 1:a -acodec copy -vcodec copy -map 2 -c:s:0 mov_text -metadata:s:s:0 language=eng "Session 10106 - Support external cameras in your iPadOS app  (2160p).mp4"
+rm "Session - 10106 temp.vtt"
+rm "Session - 10106 temp.mp4"
+rm "Session - 10106 temp.aac"
+
+# 31
 # Session 10185 - Update Live Activities with push notifications
 ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2023/10185/4/1867F512-50A9-4907-A90A-34A7E198BDB7/cmaf/hvc/2160p_16800/hvc_2160p_16800.m3u8 -c copy "Session - 10185 temp.mp4"
 ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2023/10185/4/1867F512-50A9-4907-A90A-34A7E198BDB7/cmaf/aac/lc_192/aac_lc_192.m3u8 -c copy "Session - 10185 temp.aac"
@@ -313,7 +333,7 @@ rm "Session - 10185 temp.vtt"
 rm "Session - 10185 temp.mp4"
 rm "Session - 10185 temp.aac"
 
-# 30
+# 32
 # Session 10047 - Use Core ML Tools for machine learning model compression
 ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2023/10047/4/E4F2FB98-2605-4693-8FA8-978D1AD634F4/cmaf/hvc/2160p_16800/hvc_2160p_16800.m3u8 -c copy "Session - 10047 temp.mp4"
 ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2023/10047/4/E4F2FB98-2605-4693-8FA8-978D1AD634F4/cmaf/aac/lc_192/aac_lc_192.m3u8 -c copy "Session - 10047 temp.aac"
@@ -323,7 +343,7 @@ rm "Session - 10047 temp.vtt"
 rm "Session - 10047 temp.mp4"
 rm "Session - 10047 temp.aac"
 
-# 31
+# 33
 # Session 10015 - What's new in App Store pre-orders
 ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2023/10015/4/1BACDF1D-18D0-4971-AED9-7DBB31B3926A/cmaf/hvc/2160p_16800/hvc_2160p_16800.m3u8 -c copy "Session - 10015 temp.mp4"
 ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2023/10015/4/1BACDF1D-18D0-4971-AED9-7DBB31B3926A/cmaf/aac/lc_192/aac_lc_192.m3u8 -c copy "Session - 10015 temp.aac"
@@ -333,7 +353,7 @@ rm "Session - 10015 temp.vtt"
 rm "Session - 10015 temp.mp4"
 rm "Session - 10015 temp.aac"
 
-# 32
+# 34
 # Session 10108 - What's new in Background Assets
 ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2023/10108/4/ABFECE71-93F9-4920-8A81-C99BB04A5FF3/cmaf/hvc/2160p_16800/hvc_2160p_16800.m3u8 -c copy "Session - 10108 temp.mp4"
 ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2023/10108/4/ABFECE71-93F9-4920-8A81-C99BB04A5FF3/cmaf/aac/lc_192/aac_lc_192.m3u8 -c copy "Session - 10108 temp.aac"
@@ -343,7 +363,7 @@ rm "Session - 10108 temp.vtt"
 rm "Session - 10108 temp.mp4"
 rm "Session - 10108 temp.aac"
 
-# 33
+# 35
 # Session 10186 - What's new in Core Data
 ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2023/10186/4/169A3CA9-FA4A-40D0-A3A5-3635916BBCCE/cmaf/hvc/2160p_16800/hvc_2160p_16800.m3u8 -c copy "Session - 10186 temp.mp4"
 ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2023/10186/4/169A3CA9-FA4A-40D0-A3A5-3635916BBCCE/cmaf/aac/lc_192/aac_lc_192.m3u8 -c copy "Session - 10186 temp.aac"
@@ -353,7 +373,7 @@ rm "Session - 10186 temp.vtt"
 rm "Session - 10186 temp.mp4"
 rm "Session - 10186 temp.aac"
 
-# 34
+# 36
 # Session 10114 - What's new in Wallet and Apple Pay
 ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2023/10114/5/208CF134-3A8A-417E-8DF3-0B8A1F60B130/cmaf/hvc/2160p_16800/hvc_2160p_16800.m3u8 -c copy "Session - 10114 temp.mp4"
 ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2023/10114/5/208CF134-3A8A-417E-8DF3-0B8A1F60B130/cmaf/aac/lc_192/aac_lc_192.m3u8 -c copy "Session - 10114 temp.aac"
@@ -363,7 +383,7 @@ rm "Session - 10114 temp.vtt"
 rm "Session - 10114 temp.mp4"
 rm "Session - 10114 temp.aac"
 
-# 35
+# 37
 # Session 10136 - What’s new in ScreenCaptureKit
 ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2023/10136/6/998A4D51-FB97-4CB9-959F-65B5827F9926/cmaf/hvc/2160p_16800/hvc_2160p_16800.m3u8 -c copy "Session - 10136 temp.mp4"
 ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2023/10136/6/998A4D51-FB97-4CB9-959F-65B5827F9926/cmaf/aac/lc_192/aac_lc_192.m3u8 -c copy "Session - 10136 temp.aac"
@@ -373,7 +393,7 @@ rm "Session - 10136 temp.vtt"
 rm "Session - 10136 temp.mp4"
 rm "Session - 10136 temp.aac"
 
-# 36
+# 38
 # Session 10058 - What’s new with text and text interactions
 ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2023/10058/4/8038A20C-9E59-409E-9C2A-02B517C649A7/cmaf/hvc/2160p_16800/hvc_2160p_16800.m3u8 -c copy "Session - 10058 temp.mp4"
 ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2023/10058/4/8038A20C-9E59-409E-9C2A-02B517C649A7/cmaf/aac/lc_192/aac_lc_192.m3u8 -c copy "Session - 10058 temp.aac"
