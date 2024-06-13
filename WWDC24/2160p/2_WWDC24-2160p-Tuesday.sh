@@ -342,3 +342,13 @@ ffmpeg -i "Session - 10181 temp.mp4" -i "Session - 10181 temp.aac" -i "Session -
 rm "Session - 10181 temp.vtt"
 rm "Session - 10181 temp.mp4"
 rm "Session - 10181 temp.aac"
+
+# 33
+# Session 10132 - Evolve your document launch experience
+ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2024/10132/4/F41D2CAF-097E-4793-B867-78798357CBBC/cmaf/hvc/2160p_16800/hvc_2160p_16800.m3u8 -c copy "Session - 10132 temp.mp4"
+ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2024/10132/4/F41D2CAF-097E-4793-B867-78798357CBBC/cmaf/aac/lc_192/aac_lc_192.m3u8 -c copy "Session - 10132 temp.aac"
+ffmpeg -i https://devstreaming-cdn.apple.com/videos/wwdc/2024/10132/4/F41D2CAF-097E-4793-B867-78798357CBBC/subtitles/eng/prog_index.m3u8 -c copy "Session - 10132 temp.vtt"
+ffmpeg -i "Session - 10132 temp.mp4" -i "Session - 10132 temp.aac" -i "Session - 10132 temp.vtt" -map 0:v -map 1:a -acodec copy -vcodec copy -map 2 -c:s:0 mov_text -metadata:s:s:0 language=eng "Session 10132 - Evolve your document launch experience (2160p).mp4"
+rm "Session - 10132 temp.vtt"
+rm "Session - 10132 temp.mp4"
+rm "Session - 10132 temp.aac"
