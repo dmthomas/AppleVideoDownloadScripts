@@ -1,0 +1,25 @@
+# WWDC25 Platforms State of the Union
+ffmpeg -extension_picky 0 -i https://devstreaming-cdn.apple.com/videos/wwdc/2025/102/2/137f7e3a-caee-4bb1-bdea-adca731aa1ed/cmaf/hvc/1440p_8100/hvc_1440p_8100.m3u8 -c copy "WWDC 2025 Platforms State of the Union temp.mp4"
+ffmpeg -extension_picky 0 -i https://devstreaming-cdn.apple.com/videos/wwdc/2025/102/2/137f7e3a-caee-4bb1-bdea-adca731aa1ed/cmaf/aac/lc_192/aac_lc_192.m3u8 -c copy "WWDC 2025 Platforms State of the Union temp.aac"
+
+ffmpeg -extension_picky 0 -i https://devstreaming-cdn.apple.com/videos/wwdc/2025/102/2/137f7e3a-caee-4bb1-bdea-adca731aa1ed/subtitles/eng/prog_index.m3u8 -c copy "WWDC 2025 Platforms State of the Union temp en.vtt"
+ffmpeg -extension_picky 0 -i https://devstreaming-cdn.apple.com/videos/wwdc/2025/102/2/137f7e3a-caee-4bb1-bdea-adca731aa1ed/subtitles/zho/prog_index.m3u8 -c copy "WWDC 2025 Platforms State of the Union temp zh.vtt"
+ffmpeg -extension_picky 0 -i https://devstreaming-cdn.apple.com/videos/wwdc/2025/102/2/137f7e3a-caee-4bb1-bdea-adca731aa1ed/subtitles/jpn/prog_index.m3u8 -c copy "WWDC 2025 Platforms State of the Union temp ja.vtt"
+ffmpeg -extension_picky 0 -i https://devstreaming-cdn.apple.com/videos/wwdc/2025/102/2/137f7e3a-caee-4bb1-bdea-adca731aa1ed/subtitles/kor/prog_index.m3u8 -c copy "WWDC 2025 Platforms State of the Union temp ko.vtt"
+ffmpeg -extension_picky 0 -i https://devstreaming-cdn.apple.com/videos/wwdc/2025/102/2/137f7e3a-caee-4bb1-bdea-adca731aa1ed/subtitles/spa/prog_index.m3u8 -c copy "WWDC 2025 Platforms State of the Union temp es.vtt"
+ffmpeg -extension_picky 0 -i https://devstreaming-cdn.apple.com/videos/wwdc/2025/102/2/137f7e3a-caee-4bb1-bdea-adca731aa1ed/subtitles/deu/prog_index.m3u8 -c copy "WWDC 2025 Platforms State of the Union temp de.vtt"
+ffmpeg -extension_picky 0 -i https://devstreaming-cdn.apple.com/videos/wwdc/2025/102/2/137f7e3a-caee-4bb1-bdea-adca731aa1ed/subtitles/fra/prog_index.m3u8 -c copy "WWDC 2025 Platforms State of the Union temp fr.vtt"
+ffmpeg -extension_picky 0 -i https://devstreaming-cdn.apple.com/videos/wwdc/2025/102/2/137f7e3a-caee-4bb1-bdea-adca731aa1ed/subtitles/por/prog_index.m3u8 -c copy "WWDC 2025 Platforms State of the Union temp pt-br.vtt"
+
+ffmpeg -i "WWDC 2025 Platforms State of the Union temp.mp4" -i "WWDC 2025 Platforms State of the Union temp.aac" -i "WWDC 2025 Platforms State of the Union temp zh.vtt" -i "WWDC 2025 Platforms State of the Union temp de.vtt" -i "WWDC 2025 Platforms State of the Union temp en.vtt" -i "WWDC 2025 Platforms State of the Union temp fr.vtt" -i "WWDC 2025 Platforms State of the Union temp es.vtt" -i "WWDC 2025 Platforms State of the Union temp ja.vtt" -i "WWDC 2025 Platforms State of the Union temp ko.vtt" -i "WWDC 2025 Platforms State of the Union temp pt-br.vtt" -map 0:v -map 1:a -acodec copy -vcodec copy -map 2 -c:s:0 mov_text -metadata:s:s:0 language=zho -map 3 -c:s:1 mov_text -metadata:s:s:1 language=deu -map 4 -c:s:2 mov_text -metadata:s:s:2 language=eng -map 5 -c:s:3 mov_text -metadata:s:s:3 language=fra -map 6 -c:s:4 mov_text -metadata:s:s:4 language=spa -map 7 -c:s:5 mov_text -metadata:s:s:5 language=jpn -map 8 -c:s:6 mov_text -metadata:s:s:6 language=kor -map 9 -c:s:7 mov_text -metadata:s:s:7 language=por "Apple WWDC 2025 Platforms State of the Union (1440p).mp4"
+
+rm "WWDC 2025 Platforms State of the Union temp.mp4"
+rm "WWDC 2025 Platforms State of the Union temp.aac"
+rm "WWDC 2025 Platforms State of the Union temp en.vtt"
+rm "WWDC 2025 Platforms State of the Union temp zh.vtt"
+rm "WWDC 2025 Platforms State of the Union temp ja.vtt"
+rm "WWDC 2025 Platforms State of the Union temp ko.vtt"
+rm "WWDC 2025 Platforms State of the Union temp es.vtt"
+rm "WWDC 2025 Platforms State of the Union temp de.vtt"
+rm "WWDC 2025 Platforms State of the Union temp fr.vtt"
+rm "WWDC 2025 Platforms State of the Union temp pt-br.vtt"
