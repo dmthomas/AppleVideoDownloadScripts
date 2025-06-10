@@ -1148,3 +1148,13 @@ ffmpeg -i "Session - 247 temp.mp4" -i "Session - 247 temp.aac" -i "Session - 247
 rm "Session - 247 temp.vtt"
 rm "Session - 247 temp.mp4"
 rm "Session - 247 temp.aac"
+
+# 116
+# Session 367 - WWDC25 Platforms State of the Union Recap
+ffmpeg -extension_picky 0 -i https://devstreaming-cdn.apple.com/videos/wwdc/2025/367/2/56654673-9cbe-4dc1-bdbe-7960bd7d92c2/cmaf/hvc/2160p_16800/hvc_2160p_16800.m3u8 -c copy "Session - 367 temp.mp4"
+ffmpeg -extension_picky 0 -i https://devstreaming-cdn.apple.com/videos/wwdc/2025/367/2/56654673-9cbe-4dc1-bdbe-7960bd7d92c2/cmaf/aac/lc_192/aac_lc_192.m3u8 -c copy "Session - 367 temp.aac"
+ffmpeg -extension_picky 0 -i https://devstreaming-cdn.apple.com/videos/wwdc/2025/367/2/56654673-9cbe-4dc1-bdbe-7960bd7d92c2/subtitles/eng/prog_index.m3u8 -c copy "Session - 367 temp.vtt"
+ffmpeg -i "Session - 367 temp.mp4" -i "Session - 367 temp.aac" -i "Session - 367 temp.vtt" -map 0:v -map 1:a -acodec copy -vcodec copy -map 2 -c:s:0 mov_text -metadata:s:s:0 language=eng "Session 367 - WWDC25 Platforms State of the Union Recap (2160p).mp4"
+rm "Session - 367 temp.vtt"
+rm "Session - 367 temp.mp4"
+rm "Session - 367 temp.aac"
