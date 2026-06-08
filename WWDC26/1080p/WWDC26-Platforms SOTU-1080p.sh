@@ -1,0 +1,25 @@
+# WWDC26 Platforms State of the Union
+ffmpeg -extension_picky 0 -i https://devstreaming-cdn.apple.com/videos/wwdc/2026/102/2/abb4bd38-dfae-46cf-985f-160769b92d41/cmaf/hvc/1080p_5800/hvc_1080p_5800.m3u8 -c copy "WWDC 2026 Platforms State of the Union temp.mp4"
+ffmpeg -extension_picky 0 -i https://devstreaming-cdn.apple.com/videos/wwdc/2026/102/2/abb4bd38-dfae-46cf-985f-160769b92d41/cmaf/aac/lc_192/aac_lc_192.m3u8 -c copy "WWDC 2026 Platforms State of the Union temp.aac"
+
+ffmpeg -extension_picky 0 -i https://devstreaming-cdn.apple.com/videos/wwdc/2026/102/2/abb4bd38-dfae-46cf-985f-160769b92d41/subtitles/en/prog_index.m3u8 -c copy "WWDC 2026 Platforms State of the Union temp en.vtt"
+ffmpeg -extension_picky 0 -i https://devstreaming-cdn.apple.com/videos/wwdc/2026/102/2/abb4bd38-dfae-46cf-985f-160769b92d41/subtitles/zh/prog_index.m3u8 -c copy "WWDC 2026 Platforms State of the Union temp zh.vtt"
+ffmpeg -extension_picky 0 -i https://devstreaming-cdn.apple.com/videos/wwdc/2026/102/2/abb4bd38-dfae-46cf-985f-160769b92d41/subtitles/ja/prog_index.m3u8 -c copy "WWDC 2026 Platforms State of the Union temp ja.vtt"
+ffmpeg -extension_picky 0 -i https://devstreaming-cdn.apple.com/videos/wwdc/2026/102/2/abb4bd38-dfae-46cf-985f-160769b92d41/subtitles/ko/prog_index.m3u8 -c copy "WWDC 2026 Platforms State of the Union temp ko.vtt"
+ffmpeg -extension_picky 0 -i https://devstreaming-cdn.apple.com/videos/wwdc/2026/102/2/abb4bd38-dfae-46cf-985f-160769b92d41/subtitles/es-419/prog_index.m3u8 -c copy "WWDC 2026 Platforms State of the Union temp es.vtt"
+ffmpeg -extension_picky 0 -i https://devstreaming-cdn.apple.com/videos/wwdc/2026/102/2/abb4bd38-dfae-46cf-985f-160769b92d41/subtitles/de/prog_index.m3u8 -c copy "WWDC 2026 Platforms State of the Union temp de.vtt"
+ffmpeg -extension_picky 0 -i https://devstreaming-cdn.apple.com/videos/wwdc/2026/102/2/abb4bd38-dfae-46cf-985f-160769b92d41/subtitles/fr/prog_index.m3u8 -c copy "WWDC 2026 Platforms State of the Union temp fr.vtt"
+ffmpeg -extension_picky 0 -i https://devstreaming-cdn.apple.com/videos/wwdc/2026/102/2/abb4bd38-dfae-46cf-985f-160769b92d41/subtitles/pt-BR/prog_index.m3u8 -c copy "WWDC 2026 Platforms State of the Union temp pt-br.vtt"
+
+ffmpeg -i "WWDC 2026 Platforms State of the Union temp.mp4" -i "WWDC 2026 Platforms State of the Union temp.aac" -i "WWDC 2026 Platforms State of the Union temp zh.vtt" -i "WWDC 2026 Platforms State of the Union temp de.vtt" -i "WWDC 2026 Platforms State of the Union temp en.vtt" -i "WWDC 2026 Platforms State of the Union temp fr.vtt" -i "WWDC 2026 Platforms State of the Union temp es.vtt" -i "WWDC 2026 Platforms State of the Union temp ja.vtt" -i "WWDC 2026 Platforms State of the Union temp ko.vtt" -i "WWDC 2026 Platforms State of the Union temp pt-br.vtt" -map 0:v -map 1:a -acodec copy -vcodec copy -map 2 -c:s:0 mov_text -metadata:s:s:0 language=zho -map 3 -c:s:1 mov_text -metadata:s:s:1 language=deu -map 4 -c:s:2 mov_text -metadata:s:s:2 language=eng -map 5 -c:s:3 mov_text -metadata:s:s:3 language=fra -map 6 -c:s:4 mov_text -metadata:s:s:4 language=spa -map 7 -c:s:5 mov_text -metadata:s:s:5 language=jpn -map 8 -c:s:6 mov_text -metadata:s:s:6 language=kor -map 9 -c:s:7 mov_text -metadata:s:s:7 language=por "Apple WWDC 2026 Platforms State of the Union (1080p).mp4"
+
+rm "WWDC 2026 Platforms State of the Union temp.mp4"
+rm "WWDC 2026 Platforms State of the Union temp.aac"
+rm "WWDC 2026 Platforms State of the Union temp en.vtt"
+rm "WWDC 2026 Platforms State of the Union temp zh.vtt"
+rm "WWDC 2026 Platforms State of the Union temp ja.vtt"
+rm "WWDC 2026 Platforms State of the Union temp ko.vtt"
+rm "WWDC 2026 Platforms State of the Union temp es.vtt"
+rm "WWDC 2026 Platforms State of the Union temp de.vtt"
+rm "WWDC 2026 Platforms State of the Union temp fr.vtt"
+rm "WWDC 2026 Platforms State of the Union temp pt-br.vtt"
