@@ -1118,3 +1118,13 @@ ffmpeg -i "Session - 398 temp.mp4" -i "Session - 398 temp.aac" -i "Session - 398
 rm "Session - 398 temp.vtt"
 rm "Session - 398 temp.mp4"
 rm "Session - 398 temp.aac"
+
+#113
+# Session 399 - Dub Dub Daily - Day 4
+ffmpeg -extension_picky 0 -i https://devstreaming-cdn.apple.com/videos/wwdc/2026/399/2/3b82f5d9-fdd9-47cd-862b-8d6c6d9ffa02/cmaf/hvc/2160p_16800/hvc_2160p_16800.m3u8 -c copy "Session - 399 temp.mp4"
+ffmpeg -extension_picky 0 -i https://devstreaming-cdn.apple.com/videos/wwdc/2026/399/2/3b82f5d9-fdd9-47cd-862b-8d6c6d9ffa02/cmaf/aac/lc_192/aac_lc_192.m3u8 -c copy "Session - 399 temp.aac"
+ffmpeg -extension_picky 0 -i https://devstreaming-cdn.apple.com/videos/wwdc/2026/399/2/3b82f5d9-fdd9-47cd-862b-8d6c6d9ffa02/subtitles/en/prog_index.m3u8 -c copy "Session - 399 temp.vtt"
+ffmpeg -i "Session - 399 temp.mp4" -i "Session - 399 temp.aac" -i "Session - 399 temp.vtt" -map 0:v -map 1:a -acodec copy -vcodec copy -map 2 -c:s:0 mov_text -metadata:s:s:0 language=eng "Session 399 - Dub Dub Daily - Day 4 (2160p).mp4"
+rm "Session - 399 temp.vtt"
+rm "Session - 399 temp.mp4"
+rm "Session - 399 temp.aac"
