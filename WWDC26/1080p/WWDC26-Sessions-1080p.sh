@@ -1128,3 +1128,13 @@ ffmpeg -i "Session - 399 temp.mp4" -i "Session - 399 temp.aac" -i "Session - 399
 rm "Session - 399 temp.vtt"
 rm "Session - 399 temp.mp4"
 rm "Session - 399 temp.aac"
+
+#114
+# Session 400 - Dub Dub Daily - Day 5
+ffmpeg -extension_picky 0 -i https://devstreaming-cdn.apple.com/videos/wwdc/2026/400/2/71024f51-e63d-4684-b97c-39b7b148238f/cmaf/hvc/1080p_5800/hvc_1080p_5800.m3u8 -c copy "Session - 400 temp.mp4"
+ffmpeg -extension_picky 0 -i https://devstreaming-cdn.apple.com/videos/wwdc/2026/400/2/71024f51-e63d-4684-b97c-39b7b148238f/cmaf/aac/lc_192/aac_lc_192.m3u8 -c copy "Session - 400 temp.aac"
+ffmpeg -extension_picky 0 -i https://devstreaming-cdn.apple.com/videos/wwdc/2026/400/2/71024f51-e63d-4684-b97c-39b7b148238f/subtitles/ko/prog_index.m3u8 -c copy "Session - 400 temp.vtt"
+ffmpeg -i "Session - 400 temp.mp4" -i "Session - 400 temp.aac" -i "Session - 400 temp.vtt" -map 0:v -map 1:a -acodec copy -vcodec copy -map 2 -c:s:0 mov_text -metadata:s:s:0 language=eng "Session 400 - Dub Dub Daily - Day 5 (1080p).mp4"
+rm "Session - 400 temp.vtt"
+rm "Session - 400 temp.mp4"
+rm "Session - 400 temp.aac"
