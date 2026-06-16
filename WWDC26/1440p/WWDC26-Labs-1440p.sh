@@ -48,6 +48,14 @@ rm "Session - 8121 temp.mp4"
 rm "Session - 8121 temp.aac"
 
 # 7
+# Session 8016 - Machine Learning & AI Group Lab
+ffmpeg -extension_picky 0 -i https://devstreaming-cdn.apple.com/videos/wwdc/2026/8016/1/04b4b0c5-be28-4f1e-aa00-20ab42ad622c/cmaf/hvc/1440p_8100/hvc_1440p_8100.m3u8 -c copy "Session - 8016 temp.mp4"
+ffmpeg -extension_picky 0 -i https://devstreaming-cdn.apple.com/videos/wwdc/2026/8016/1/04b4b0c5-be28-4f1e-aa00-20ab42ad622c/cmaf/aac/lc_192/aac_lc_192.m3u8 -c copy "Session - 8016 temp.aac"
+ffmpeg -i "Session - 8016 temp.mp4" -i "Session - 8016 temp.aac" -c copy "Session 8016 - Machine Learning & AI Group Lab (1440p).mp4"
+rm "Session - 8016 temp.mp4"
+rm "Session - 8016 temp.aac"
+
+# 8
 # Session 8003 - Power and Performance Group Lab
 ffmpeg -extension_picky 0 -i https://devstreaming-cdn.apple.com/videos/wwdc/2026/8003/1/3e92bdbb-e289-4fca-a1b7-50dd13e870a1/cmaf/hvc/1440p_8100/hvc_1440p_8100.m3u8 -c copy "Session - 8003 temp.mp4"
 ffmpeg -extension_picky 0 -i https://devstreaming-cdn.apple.com/videos/wwdc/2026/8003/1/3e92bdbb-e289-4fca-a1b7-50dd13e870a1/cmaf/aac/lc_192/aac_lc_192.m3u8 -c copy "Session - 8003 temp.aac"
@@ -55,7 +63,7 @@ ffmpeg -i "Session - 8003 temp.mp4" -i "Session - 8003 temp.aac" -c copy "Sessio
 rm "Session - 8003 temp.mp4"
 rm "Session - 8003 temp.aac"
 
-# 8
+# 9
 # Session 8009 - Privacy and Security Group Lab
 ffmpeg -extension_picky 0 -i https://devstreaming-cdn.apple.com/videos/wwdc/2026/8009/1/7afd51c7-53f2-4ae8-a924-0c6c7f8e5e02/cmaf/hvc/1440p_8100/hvc_1440p_8100.m3u8 -c copy "Session - 8009 temp.mp4"
 ffmpeg -extension_picky 0 -i https://devstreaming-cdn.apple.com/videos/wwdc/2026/8009/1/7afd51c7-53f2-4ae8-a924-0c6c7f8e5e02/cmaf/aac/lc_192/aac_lc_192.m3u8 -c copy "Session - 8009 temp.aac"
@@ -63,7 +71,7 @@ ffmpeg -i "Session - 8009 temp.mp4" -i "Session - 8009 temp.aac" -c copy "Sessio
 rm "Session - 8009 temp.mp4"
 rm "Session - 8009 temp.aac"
 
-# 9
+# 10
 # Session 8015 - Safari and Web Technologies Group Lab
 ffmpeg -extension_picky 0 -i https://devstreaming-cdn.apple.com/videos/wwdc/2026/8015/1/4ca776db-5587-4340-a4ec-d4565dd9241d/cmaf/hvc/1440p_8100/hvc_1440p_8100.m3u8 -c copy "Session - 8015 temp.mp4"
 ffmpeg -extension_picky 0 -i https://devstreaming-cdn.apple.com/videos/wwdc/2026/8015/1/4ca776db-5587-4340-a4ec-d4565dd9241d/cmaf/aac/lc_192/aac_lc_192.m3u8 -c copy "Session - 8015 temp.aac"
@@ -71,7 +79,7 @@ ffmpeg -i "Session - 8015 temp.mp4" -i "Session - 8015 temp.aac" -c copy "Sessio
 rm "Session - 8015 temp.mp4"
 rm "Session - 8015 temp.aac"
 
-# 10
+# 11
 # Session 8001 - Swift Group Lab
 ffmpeg -extension_picky 0 -i https://devstreaming-cdn.apple.com/videos/wwdc/2026/8001/1/6ee7f28d-d198-4690-af7e-ac35f4173c3c/cmaf/hvc/1440p_8100/hvc_1440p_8100.m3u8 -c copy "Session - 8001 temp.mp4"
 ffmpeg -extension_picky 0 -i https://devstreaming-cdn.apple.com/videos/wwdc/2026/8001/1/6ee7f28d-d198-4690-af7e-ac35f4173c3c/cmaf/aac/lc_192/aac_lc_192.m3u8 -c copy "Session - 8001 temp.aac"
@@ -79,7 +87,15 @@ ffmpeg -i "Session - 8001 temp.mp4" -i "Session - 8001 temp.aac" -c copy "Sessio
 rm "Session - 8001 temp.mp4"
 rm "Session - 8001 temp.aac"
 
-# 11
+# 12
+# Session 8017 - SwiftData Group Lab
+ffmpeg -extension_picky 0 -i https://devstreaming-cdn.apple.com/videos/wwdc/2026/8017/1/f1631a09-429b-4879-ac57-7f076af1e7f0/cmaf/hvc/1440p_8100/hvc_1440p_8100.m3u8 -c copy "Session - 8017 temp.mp4"
+ffmpeg -extension_picky 0 -i https://devstreaming-cdn.apple.com/videos/wwdc/2026/8017/1/f1631a09-429b-4879-ac57-7f076af1e7f0/cmaf/aac/lc_192/aac_lc_192.m3u8 -c copy "Session - 8017 temp.aac"
+ffmpeg -i "Session - 8017 temp.mp4" -i "Session - 8017 temp.aac" -c copy "Session 8017 - SwiftData Group Lab (1440p).mp4"
+rm "Session - 8017 temp.mp4"
+rm "Session - 8017 temp.aac"
+
+# 13
 # Session 8002 - SwiftUI for Beginners Group Lab
 ffmpeg -extension_picky 0 -i https://devstreaming-cdn.apple.com/videos/wwdc/2026/8002/1/82335df8-72e8-43d1-9e9d-935affc5977b/cmaf/hvc/1440p_8100/hvc_1440p_8100.m3u8 -c copy "Session - 8002 temp.mp4"
 ffmpeg -extension_picky 0 -i https://devstreaming-cdn.apple.com/videos/wwdc/2026/8002/1/82335df8-72e8-43d1-9e9d-935affc5977b/cmaf/aac/lc_192/aac_lc_192.m3u8 -c copy "Session - 8002 temp.aac"
@@ -87,7 +103,7 @@ ffmpeg -i "Session - 8002 temp.mp4" -i "Session - 8002 temp.aac" -c copy "Sessio
 rm "Session - 8002 temp.mp4"
 rm "Session - 8002 temp.aac"
 
-# 12
+# 14
 # Session 8006 - SwiftUI Group Lab
 ffmpeg -extension_picky 0 -i https://devstreaming-cdn.apple.com/videos/wwdc/2026/8006/1/b531da5e-7fd6-4d3b-8378-76364af6e675/cmaf/hvc/1440p_8100/hvc_1440p_8100.m3u8 -c copy "Session - 8006 temp.mp4"
 ffmpeg -extension_picky 0 -i https://devstreaming-cdn.apple.com/videos/wwdc/2026/8006/1/b531da5e-7fd6-4d3b-8378-76364af6e675/cmaf/aac/lc_192/aac_lc_192.m3u8 -c copy "Session - 8006 temp.aac"
@@ -95,7 +111,7 @@ ffmpeg -i "Session - 8006 temp.mp4" -i "Session - 8006 temp.aac" -c copy "Sessio
 rm "Session - 8006 temp.mp4"
 rm "Session - 8006 temp.aac"
 
-# 13
+# 15
 # Session 8120 - SwiftUI Group Lab 
 ffmpeg -extension_picky 0 -i https://devstreaming-cdn.apple.com/videos/wwdc/2026/8120/1/89fea628-fb6a-493a-b5dd-462e2e30ab66/cmaf/hvc/1440p_8100/hvc_1440p_8100.m3u8 -c copy "Session - 8120 temp.mp4"
 ffmpeg -extension_picky 0 -i https://devstreaming-cdn.apple.com/videos/wwdc/2026/8120/1/89fea628-fb6a-493a-b5dd-462e2e30ab66/cmaf/aac/lc_192/aac_lc_192.m3u8 -c copy "Session - 8120 temp.aac"
@@ -103,7 +119,7 @@ ffmpeg -i "Session - 8120 temp.mp4" -i "Session - 8120 temp.aac" -c copy "Sessio
 rm "Session - 8120 temp.mp4"
 rm "Session - 8120 temp.aac"
 
-# 14
+# 16
 # Session 8004 - visionOS Group Lab
 ffmpeg -extension_picky 0 -i https://devstreaming-cdn.apple.com/videos/wwdc/2026/8004/1/52426afe-f1d2-41a2-9862-e0a34d23e575/cmaf/hvc/1440p_8100/hvc_1440p_8100.m3u8 -c copy "Session - 8004 temp.mp4"
 ffmpeg -extension_picky 0 -i https://devstreaming-cdn.apple.com/videos/wwdc/2026/8004/1/52426afe-f1d2-41a2-9862-e0a34d23e575/cmaf/aac/lc_192/aac_lc_192.m3u8 -c copy "Session - 8004 temp.aac"
@@ -111,7 +127,7 @@ ffmpeg -i "Session - 8004 temp.mp4" -i "Session - 8004 temp.aac" -c copy "Sessio
 rm "Session - 8004 temp.mp4"
 rm "Session - 8004 temp.aac"
 
-# 15
+# 17
 # Session 8014 - watchOS Group Lab
 ffmpeg -extension_picky 0 -i https://devstreaming-cdn.apple.com/videos/wwdc/2026/8014/1/d2678e2c-5289-437f-9126-9db3a7c4c0ee/cmaf/hvc/1440p_8100/hvc_1440p_8100.m3u8 -c copy "Session - 8014 temp.mp4"
 ffmpeg -extension_picky 0 -i https://devstreaming-cdn.apple.com/videos/wwdc/2026/8014/1/d2678e2c-5289-437f-9126-9db3a7c4c0ee/cmaf/aac/lc_192/aac_lc_192.m3u8 -c copy "Session - 8014 temp.aac"
@@ -119,7 +135,7 @@ ffmpeg -i "Session - 8014 temp.mp4" -i "Session - 8014 temp.aac" -c copy "Sessio
 rm "Session - 8014 temp.mp4"
 rm "Session - 8014 temp.aac"
 
-# 16
+# 18
 # Session 8013 - Xcode Tips and Tricks Group Lab
 ffmpeg -extension_picky 0 -i https://devstreaming-cdn.apple.com/videos/wwdc/2026/8013/1/477be231-25cb-4141-9499-8f8f69ea3650/cmaf/hvc/1440p_8100/hvc_1440p_8100.m3u8 -c copy "Session - 8013 temp.mp4"
 ffmpeg -extension_picky 0 -i https://devstreaming-cdn.apple.com/videos/wwdc/2026/8013/1/477be231-25cb-4141-9499-8f8f69ea3650/cmaf/aac/lc_192/aac_lc_192.m3u8 -c copy "Session - 8013 temp.aac"
