@@ -1138,3 +1138,13 @@ ffmpeg -i "Session - 400 temp.mp4" -i "Session - 400 temp.aac" -i "Session - 400
 rm "Session - 400 temp.vtt"
 rm "Session - 400 temp.mp4"
 rm "Session - 400 temp.aac"
+
+#115
+# Session 382 - Inside Apple Intelligence and Xcode - Special Presentation
+ffmpeg -extension_picky 0 -i https://devstreaming-cdn.apple.com/videos/wwdc/2026/382/1/a1dfe905-059c-45b1-b109-e68230f76399/cmaf/hvc/1080p_5800/hvc_1080p_5800.m3u8 -c copy "Session - 382 temp.mp4"
+ffmpeg -extension_picky 0 -i https://devstreaming-cdn.apple.com/videos/wwdc/2026/382/1/a1dfe905-059c-45b1-b109-e68230f76399/cmaf/aac/lc_192/aac_lc_192.m3u8 -c copy "Session - 382 temp.aac"
+ffmpeg -extension_picky 0 -i https://devstreaming-cdn.apple.com/videos/wwdc/2026/382/1/a1dfe905-059c-45b1-b109-e68230f76399/subtitles/en/prog_index.m3u8 -c copy "Session - 382 temp.vtt"
+ffmpeg -i "Session - 382 temp.mp4" -i "Session - 382 temp.aac" -i "Session - 382 temp.vtt" -map 0:v -map 1:a -acodec copy -vcodec copy -map 2 -c:s:0 mov_text -metadata:s:s:0 language=eng "Session 382 - Inside Apple Intelligence and Xcode - Special Presentation (1080p).mp4"
+rm "Session - 382 temp.vtt"
+rm "Session - 382 temp.mp4"
+rm "Session - 382 temp.aac"
