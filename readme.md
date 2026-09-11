@@ -1,5 +1,12 @@
 # Scripts for downloading higher resolution videos of Apple Events using ffmpeg from Apple's streams
 
+#Update for September 2026
+
+I was working on the September 2026 scripts and I can't even get audio to download correctly from their akamai CDN. So I'm not going to publish any scripts for it because it seems futile.
+
+We'll see what happens for WWDC27.
+
+
 You may have to update ffmpeg before using this script. I needed version 4.3 or higher to successfully download the videos.
 
 If you want the lower bitrate audio, do a find/replace of "audio_english_192" with "audio_english_64"
